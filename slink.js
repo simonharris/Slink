@@ -32,13 +32,22 @@ Slink.sites = {
  * @todo Handle sites with differing URL formats
  */
 Slink.socialLink = function(site, userid, usertext) {
+
+	if ( !window.slinkIconPrefix ) {
+		imgPref = '';
+	} else {
+		imgPref = window.slinkIconPrefix;
+	}
+
 	return '<a href="' + site.urlf + userid
 						+ '" title="Visit '
 						+ usertext
 						+ ' on '
 						+ site.name
 						+ '"><img src="'
-						+ site.icon + '" /></a>';
+						+ imgPref
+						+ site.icon
+						+ '" /></a>';
 }
 
 
