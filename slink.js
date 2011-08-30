@@ -1,8 +1,7 @@
 /**
- *
- *
- *
- *
+ * @name Slink
+ * Slink makes it slightly more convenient to link to people's websites and social profiles.
+ * @author Simon Harris
  */
 
 
@@ -24,6 +23,16 @@ Slink.sites = {
 		name:'Delicious',
 		urlf:'http://www.delicious.com/',
 		icon:'icons/delicious.png'
+	},
+	facebook:{
+		name:'Facebook',
+		urlf:'http://www.facebook.com/',
+		icon:'icons/facebook.png'
+	},
+	googleplus:{
+		name:'Google Plus',
+		urlf:'https://plus.google.com',
+		icon:'icons/googleplus.png'
 	}
 }
 
